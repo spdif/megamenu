@@ -50,7 +50,7 @@
   box-shadow: 0 1px 5px #E4E4E4;
   display: none;
   position: absolute;
-  top: 100%;
+  top: auto;
   left: 0;
   background: #fff;
 }
