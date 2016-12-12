@@ -1,3 +1,8 @@
 /*
   Megamenu default theme styles
 */
+.megamenu-level-1:hover > .megamenu-item-label-link,
+.megamenu-level-1:hover > .megamenu-item-label-link:hover {
+  background-color: #ffffff;
+  color: #3b3b3b;
+}

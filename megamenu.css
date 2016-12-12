@@ -10,13 +10,18 @@
   float: right;
 }
 .megamenu {
+  width: 100%;
   font-size: 0;
+  position: relative;
+}
+.megamenu a {
+  opacity: 1;
 }
 .megamenu-level-1 {
   margin: 0 0 0 15px;
 }
 .megamenu-level-1:hover > .megamenu-item-label-link {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .megamenu-level-1:hover > ul {
   display: block;
@@ -36,13 +41,14 @@
   margin-left: 0;
 }
 .megamenu-level-1 > .megamenu-item-label-link {
-  padding: 9px 15px 8px;
+  padding: 5px 15px;
   color: #e0e0e0;
   font: 12px/16px 'Roboto', sans-serif;
+  line-height: 30px;
   text-transform: uppercase;
 }
 .megamenu-level-1 > .megamenu-item-label-link span {
-  text-decoration: inherit;
+  text-decoration: none;;
 }
 .megamenu-level-1 > ul {
   width: 100%;
@@ -55,7 +61,7 @@
   background: #fff;
 }
 .megamenu-level-2 {
-  min-width: 990px;
+  /*min-width: 990px;*/
   max-width: 1260px;
   margin: 0 auto;
   color: #454444;
@@ -89,7 +95,7 @@
 }
 .megamenu .megamenu-has-stack > .megamenu-item-label-link {
   margin: 0 0 13px;
-  padding: 0 0 9px;
+  padding: 0 30px 9px;
   border-bottom: 1px solid #f5f5f5;
   display: block;
 }
@@ -126,6 +132,7 @@
   top: 0;
   left: 0;
   display: none;
+  min-height: 100%;
 }
 .megamenu-tabs-left > ul > li > ul {
   left: auto;
@@ -450,3 +457,233 @@
 		}
 	}
 }*/
+
+.megamenu-level-2 > .megamenu-item-label-link,
+.megamenu-level-3 > .megamenu-item-label-link,
+.megamenu-level-4 > .megamenu-item-label-link,
+.megamenu-level-5 > .megamenu-item-label-link,
+.megamenu-level-6 > .megamenu-item-label-link {
+    padding: 14px 30px 13px;
+    display: block;
+}
+
+/* Megamenu positions */
+.megamenu-full_width > ul {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.megamenu-center {
+  position: relative;
+}
+.megamenu-center > ul {
+  width: auto;
+  left: -50%;
+  right: auto;
+}
+
+.megamenu-left_menu > ul {
+  width: auto;
+  left: 0;
+  right: auto;
+}
+
+.megamenu-right_menu > ul {
+  width: auto;
+  left: auto;
+  right: 0;
+}
+
+.megamenu-left_parent {}
+.megamenu-left_parent > ul {
+  width: auto;
+  left: auto;
+  right: auto;
+}
+
+.megamenu-right_parent {
+  position: relative;
+}
+.megamenu-right_parent > ul {
+  width: auto;
+  left: auto;
+  right: 0;
+}
+
+.megamenu-full_height {}
+.megamenu-align_parent {}
+
+.megamenu-tabs-right > ul {
+  float: right;
+}
+.megamenu-tabs-right > ul > li > ul {
+  left: 0;
+  right: auto;
+}
+.megamenu-tabs-right.megamenu-tabs > ul > li:hover > .megamenu-item-label-link:before,
+.megamenu-tabs-right.megamenu-tabs > ul > li.megamenu-active > .megamenu-item-label-link:before {
+  left: 10px;
+  right: auto;
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.megamenu-tabs-top.megamenu-tabs > ul > li > ul {
+  top: auto;
+}
+
+.megamenu-tabs-top.megamenu-tabs > ul > li:hover > .megamenu-item-label-link:before,
+.megamenu-tabs-top.megamenu-tabs > ul > li.megamenu-active > .megamenu-item-label-link:before {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.megamenu-tabs-bottom.megamenu-tabs > ul > li > ul {
+  /* TODO */
+  top: auto;
+  bottom: 0;
+}
+
+.megamenu-text-content {}
+.megamenu-text-padded {
+  padding: 9px 15px 8px;
+}
+.megamenu-float-left {
+  float: left;
+}
+.megamenu-float-right {
+  float: right;
+}
+.megamenu-float-none {
+  float: none;
+}
+
+.megamenu-block-content {}
+
+.megamenu-item-label {}
+.megamenu-item-description {
+  clear: both;
+  display: block;
+  font-size: 80%;
+  text-transform: none;
+}
+.megamenu-link-image-left > img {
+  margin-right: 10px;
+}
+.megamenu-link-image-right > img {
+  margin-left: 10px;
+}
+.megamenu-link-image-right > .megamenu-item-label {
+  float: left;
+}
+.megamenu-link-image-above > img {
+  display: block;
+  margin: 0 auto 5px;
+}
+.megamenu-link-image-below {
+  display: table;
+}
+.megamenu-link-image-below > img {
+  display: table-footer-group;
+  margin: 0 auto;
+}
+.megamenu-link-image-below > .megamenu-item-label {
+  display: table-header-group;
+}
+.megamenu-link-image-below > .megamenu-item-description {
+  display: table-cell;
+}
+.megamenu-link-image-only {}
+
+
+
+.megamenu-flyout.megamenu-right > ul {
+  left: auto;
+  right: 0;
+}
+
+.megamenu-flyout,
+.megamenu-flyout li {
+  position: relative;
+}
+.megamenu-flyout > ul,
+.megamenu-flyout .megamenu-column {
+  width: auto;
+  min-width: 150px;
+}
+.megamenu-flyout .megamenu-level-2,
+.megamenu-flyout .megamenu-level-3,
+.megamenu-flyout .megamenu-level-4 {
+  position: relative;
+  min-height: auto !important;
+}
+.megamenu-flyout .megamenu-level-2 > ul,
+.megamenu-flyout .megamenu-level-3 > ul,
+.megamenu-flyout .megamenu-level-4 > ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  right: auto;
+  background: #fff;
+  display: none;
+  border-left: 1px solid #f0f0f0;
+  border-bottom: 2px solid #D4D4D4;
+  box-shadow: 0 1px 5px #E4E4E4;
+  clip: rect(-10px,5000px,5000px,0);
+}
+.megamenu-flyout .megamenu-level-2:hover > ul,
+.megamenu-flyout .megamenu-level-3:hover > ul,
+.megamenu-flyout .megamenu-level-4:hover > ul {
+  display: block;
+}
+.megamenu-flyout ul > li:hover,
+.megamenu-flyout ul > li.megamenu-active {
+    background: #f7f7f7;
+}
+.megamenu-flyout ul > li:hover > .megamenu-item-label-link:before,
+.megamenu-flyout ul > li.megamenu-active > .megamenu-item-label-link:before {
+    width: 5px;
+    height: 6px;
+    margin: -3px 0 0;
+    background: transparent url(../img/icons.png) 0 -844px no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    content: "";
+}
+.megamenu-flyout .megamenu-level-2.megamenu-flyout_left ul {
+  left: auto !important;
+  right: 100% !important;
+  border-left: none;
+  border-right: 1px solid #f0f0f0;
+  border-bottom: 2px solid #D4D4D4;
+  box-shadow: 0 1px 5px #E4E4E4;
+  clip: auto;
+}
+.megamenu-flyout ul > .megamenu-flyout_left:hover .megamenu-item-label-link:before,
+.megamenu-flyout ul > .megamenu-flyout_left.megamenu-active .megamenu-item-label-link:before {
+    left: 10px !important;
+    right: auto !important;
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.megamenu-item-leaf:hover > .megamenu-item-label-link:before,
+.megamenu-item-leaf.megamenu-active > .megamenu-item-label-link:before {
+  display: none;
+}
+.megamenu-right {}
+.megamenu-left {}
+.megamenu-full_height {}
+.megamenu-align_parent {}
+
+/* // Megamenu positions */
